@@ -5,8 +5,6 @@ int main() {
     int n, i, j, start, pos, max = 0, min, idle = 0, k = 0;
     float av1 = 0, av2 = 0;
 
-
-    // Author and version information
     printf("\n@Author: Vaibhav Kumawat\n");
     printf("@Version: 1.0, 14/02/2024\n");
     printf("\nFCFS CPU Scheduling Algorithm\n");

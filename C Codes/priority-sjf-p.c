@@ -8,7 +8,7 @@ struct node {
     int restime;
     int ctime;
     int wtime;
-    int priority; // Priority of the process
+    int priority; 
 };
 
 struct node a[10], b[10], c[10];
@@ -197,7 +197,7 @@ void disp(int nop, int qt) {
 
 int main() {
     int nop, i, qt;
-    // Author and version information
+    
     printf("\n@Author: Vaibhav Kumawat\n");
     printf("@Version: 1.0, 14/02/2024\n");
     printf("\nPriority SJF-P CPU Scheduling Algorithm\n");

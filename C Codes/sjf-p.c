@@ -161,7 +161,7 @@ void disp(int nop, int qt) {
     for (i = 0; i < nop && a[i].pname != 'i'; i++) {
         if (a[i].pname == '\0')
             break;
-        // Adjust the width as needed for each column
+    
         printf("P%-14c", a[i].pname);
         printf("%-14d", a[i].btime);
         printf("%-17d", a[i].atime);
@@ -188,7 +188,6 @@ void disp(int nop, int qt) {
 int main() {
     int nop, i, qt;
     
-    // Author and version information
     printf("\n@Author: Vaibhav Kumawat\n");
     printf("@Version: 1.0, 14/02/2024\n");
     printf("\nSJF-P CPU Scheduling Algorithm\n");

@@ -36,7 +36,6 @@ int main() {
     float avgtat = 0, avgwt = 0;
     struct proc p[10], temp;
 
-    // Author and version information
     printf("\n@Author: Vaibhav Kumawat\n");
     printf("@Version: 1.0, 14/02/2024\n");
     printf("\nSJF-NP CPU Scheduling Algorithm\n");
@@ -98,8 +97,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         p[i].tat = p[i].ct - p[i].at;
         avgtat += p[i].tat;
-        p[i].wt = p[i].tat - p[i].bt; // Corrected waiting time calculation
-        avgwt += p[i].wt; // Accumulating waiting times for average calculation
+        p[i].wt = p[i].tat - p[i].bt;
+        avgwt += p[i].wt; 
         printf("P%d\t%d\t\t%d\t\t%d\t\t%d\n", p[i].no, p[i].bt, p[i].at, p[i].wt, p[i].tat);
     }
     avgtat /= n;
