@@ -1,14 +1,17 @@
 #include <stdio.h>
 
+void printAuthorInfo() {
+    printf("\n@Author: Vaibhav Kumawat\n");
+    printf("@Version: 1.0, 14/02/2024\n");
+    printf("\nFCFS CPU Scheduling Algorithm\n");
+}
+
 int main() {
     int at[10], at2[10], bt[10], ex[10], seq[10], re[10], wt[10], tat[10];
     int n, i, j, start, pos, max = 0, min, idle = 0, k = 0;
     float av1 = 0, av2 = 0;
 
-    printf("\n@Author: Vaibhav Kumawat\n");
-    printf("@Version: 1.0, 14/02/2024\n");
-    printf("\nFCFS CPU Scheduling Algorithm\n");
-
+    printAuthorInfo();
     printf("\n*****INPUT*****");
     printf("\nEnter number of processes (maximum 10): ");
     scanf("%d", &n);

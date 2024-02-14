@@ -10,6 +10,12 @@ struct proc {
     int wt;
 };
 
+void printAuthorInfo() {
+    printf("\n@Author: Vaibhav Kumawat\n");
+    printf("@Version: 1.0, 14/02/2024\n");
+    printf("\nSJF-NP CPU Scheduling Algorithm\n");
+}
+
 struct proc read(int i) {
     struct proc p;
     printf("\nProcess Number: %d\n", i);
@@ -36,10 +42,7 @@ int main() {
     float avgtat = 0, avgwt = 0;
     struct proc p[10], temp;
 
-    printf("\n@Author: Vaibhav Kumawat\n");
-    printf("@Version: 1.0, 14/02/2024\n");
-    printf("\nSJF-NP CPU Scheduling Algorithm\n");
-    
+    printAuthorInfo();
     printf("\n*****INPUT*****");
     printf("\nEnter Number of Processes (maximum 10):");
     scanf("%d", &n);

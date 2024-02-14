@@ -13,6 +13,12 @@ struct node {
 
 struct node a[10], b[10], c[10];
 
+void printAuthorInfo() {
+    printf("\n@Author: Vaibhav Kumawat\n");
+    printf("@Version: 1.0, 14/02/2024\n");
+    printf("\nPriority SJF-P CPU Scheduling Algorithm\n");
+}
+
 void insert(int n) {
     int i;
     printf("Enter burst times for processes (separated by space): ");
@@ -198,10 +204,7 @@ void disp(int nop, int qt) {
 int main() {
     int nop, i, qt;
     
-    printf("\n@Author: Vaibhav Kumawat\n");
-    printf("@Version: 1.0, 14/02/2024\n");
-    printf("\nPriority SJF-P CPU Scheduling Algorithm\n");
-
+    printAuthorInfo();
     printf("\n*****INPUT*****");
     printf("\nEnter number of processes (maximum 10): ");
     scanf("%d", &nop);
