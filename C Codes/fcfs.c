@@ -33,9 +33,7 @@ int main() {
         }
     }
 
-
     printf("\n*****OUTPUT*****\n");
-// prints the start of the Gantt chart and finds the maximum arrival time
 
     printf("Gantt chart:\n");
     for (i = 0; i < n; i++) {
@@ -43,9 +41,6 @@ int main() {
             max = at[i];
         }
     }
-
-// sets max to one more than the max arrival time and starts the loop for scheduling processes
-// finds the process with the smallest arrival time that has not been scheduled
 
     max = max + 1;
     for (i = 1; i <= n; i++, k++) {
@@ -59,17 +54,11 @@ int main() {
             }
         }
 
-// if there is idle time before the next scheduled process, print "[-]" to represent idle time, 
-// update the idle variable, and set start to the arrival time of the next process
-
         if (start < at[pos]) {
             printf("[-]   ");
             idle += at[pos] - start;
             start = at[pos];
         }
-
-// prints the arrival time, process number, and completion time for the scheduled process
-// updates variables and arrays accordingly
 
         printf("AT%d   ", start);
         printf("[P%d]  ", pos + 1);
